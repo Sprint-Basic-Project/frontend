@@ -113,6 +113,9 @@ const GroupList = ({
   }, [initialQuery, page, hasNext, isLoading]);
 
   useEffect(() => {
+    console.log(groups?.length);
+    console.log("total " + total);
+
     if (inView) {
       loadMore();
     }
